@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta
+      name="description"
+      content="Aula teórica sobre os 3 pilares do front-end - HTML, CSS JAVASCRIPT"
+    />
+    <title>Teoria base front-end</title>
+  </head>
+  <body>
+    <header> <!--Cabeçalho-->
+      <h1>Tiulo Principal</h1>
+      <p>
+        Eu sou um <strong>paragrafo</strong> e estou utilizando a tag "storng"
+        porque sou uma palavra importante
+      </p>
+    </header> 
+
+    <main>  <!--Conteudo Principal da página-->
+
+      <h2>Formação de texto</h2>
+
+      <section>   <!--tag para dividir o conteudos em seções tematicas-->
+        <h2>
+          <p>
+            posso utilizar a tag <em>em</em> para dar ênfaze em itático <br />
+            Tambem posso utilizar a tag
+            <abbr title="HyperText Markup Language">HTML</abbr> para explicar
+            abreviações ao passar o mouse.
+          </p>
+        </h2>
+      </section>
+
+      <section>
+        <h2>Sobre Listas</h2>
+
+        <ol>  <!--Lista ordenada numerada-->
+          <li>primeiro item</li>
+          <li>segundo item</li>
+        </ol>
+
+        <ul>  <!--lista nao ordenada-->
+          <li>item</li>
+          <li>item tbm</li>
+        </ul>
+
+        <details>  <!--Ocultar conteudo que esta dentro dele-->
+          <summary>Clique aqui para ver os conteudos</summary>
+
+          <h3>Para de ser curioso.</h3>
+        </details>
+      </section>
+
+      <section>
+        <h2>Midia e Imagens</h2>
+
+        <figure> <!--Agrupar a imagem junto com a legenda-->
+            <img src="IMG/one piece.webp" alt="Bando one piece">
+            <figcaption>
+                É aonde colocamos a legenda da imagem
+            </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Tabelas de Informações</h2>
+
+        <table border="3"> <!--Cria uma tabela e o atributo border define a expessura da borda-->
+
+            <thead> <!--Cabeçalho da tabela-->
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+            </thead>
+             
+            <tbody>
+                <tr>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                    <td>Dado 3</td>
+                </tr>
+
+                <tr>
+                    <td>Testes</td>
+                    <td colspan=""></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <td colspan="2">dados 3</td>
+                <td>dados</td>
+            </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Interação com Usuario</h2>
+
+            <form action="">
+                <fieldset>
+                    <legend>Titulo do Grupo de Campos</legend>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Digite seu Nome">
+
+                        <br><br><hr>
+
+                    <label>Escolha uma opção</label> <br>
+                    <input type="radio" name="opção" value="1"> Opção radio (escolha unica) <br>
+                    <input type="checkbox" name="check" value="2"> checkbox (multipla escolha)
+
+                    <br><br><hr>
+
+                    <label>Comentarios:</label> <br>
+                    <textarea rows="5" cols="110" placeholder="Essa é a área de texto para comentarios"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="button" onclick="alert('Enviado com Sucesso')">Me aperte</button>
+            </form>
+      </section>
+
+    </main>
+
+<br><br>
+
+  <footer> 
+    <h2>&copy; 2026 - Todos os direitos reservados. O simbolo é feito com a entidade &amp;copy;.</h2>
+    <p>Visite meu <a href="https://github.com/Fugii2910">GitHub</a></p>
+  </footer> 
+
+  </body>
+</html>
