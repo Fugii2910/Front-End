@@ -8,20 +8,28 @@
 
     <meta
       name="description"
-      content="Aula teórica sobre os 3 pilares do front-end - HTML, CSS JAVASCRIPT"
-    />
+      content="Aula teórica sobre os 3 pilares do front-end - HTML, CSS JAVASCRIPT"/>
+
+    <script src="script.js" defer></script>
+
     <title>Teoria base front-end</title>
   </head>
   <body>
     <header> <!--Cabeçalho-->
-      <h1>Tiulo Principal</h1>
-      <p>
-        Eu sou um <strong>paragrafo</strong> e estou utilizando a tag "storng"
-        porque sou uma palavra importante
-      </p>
+      
+      <h1>Comando básico html</h1>
+
+      <nav>  <!--Agrupa link-->
+        <ul>
+          <li><a href="#main">Interação com Usuario</a></li>
+          <li><a href="#table">Dados Estruturados</a></li>
+          <li><a href="#figure">Recursos Visuais</a></li>
+        </ul>
+      </nav>
+
     </header> 
 
-    <main>  <!--Conteudo Principal da página-->
+    <main id="main">  <!--Conteudo Principal da página-->
 
       <h2>Formação de texto</h2>
 
@@ -59,7 +67,7 @@
       <section>
         <h2>Midia e Imagens</h2>
 
-        <figure> <!--Agrupar a imagem junto com a legenda-->
+        <figure id="figure"> <!--Agrupar a imagem junto com a legenda-->
             <img src="IMG/one piece.webp" alt="Bando one piece">
             <figcaption>
                 É aonde colocamos a legenda da imagem
@@ -70,7 +78,7 @@
       <section>
         <h2>Tabelas de Informações</h2>
 
-        <table border="3"> <!--Cria uma tabela e o atributo border define a expessura da borda-->
+        <table border="3" id="table"> <!--Cria uma tabela e o atributo border define a expessura da borda-->
 
             <thead> <!--Cabeçalho da tabela-->
                 <tr>
@@ -108,7 +116,17 @@
                     <legend>Titulo do Grupo de Campos</legend>
 
                     <label for="name">Nome:</label>
-                    <input type="text" id="name" placeholder="Digite seu Nome">
+                    <input type="text" id="userName" placeholder="Digite seu Nome">
+                        
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="mail" placeholder="Coloque seu Email">
+
+                    <br>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senhaEmail" placeholder="Coloque sua Senha">
 
                         <br><br><hr>
 
@@ -124,11 +142,15 @@
 
                 <br>
 
-                <button type="button" onclick="alert('Enviado com Sucesso')">Me aperte</button>
+                <button type="button" onclick="enviar()">Me aperte</button>
             </form>
+
+            <p id="mensagemAgradecimento"></p>
+
       </section>
 
     </main>
+    
 
 <br><br>
 
