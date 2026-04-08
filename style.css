@@ -128,3 +128,8 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
 }
+
+html.darkMode, body.darkMode{
+    background-color: #121212;
+    color: aliceblue;
+}

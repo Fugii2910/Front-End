@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta
+      name="description"
+      content="Aula teórica sobre os 3 pilares do front-end - HTML, CSS JAVASCRIPT"
+    />
+
+    <script src="./form.js" defer></script>
+
+    <title>Teoria base front-end</title>
+  </head>
+  <body>
+    <header>  <!--Cabeçalho-->
+
+      <h1>Comando básico html</h1>
+
+      <nav>  <!--Agrupa link-->
+        <ul>
+          <li><a href="#main">Interação com Usuario</a></li>
+          <li><a href="#table">Dados Estruturados</a></li>
+          <li><a href="#figure">Recursos Visuais</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">  <!--Conteudo Principal da página-->
+      <section>
+        <form action="">
+          <fieldset>
+            <legend>Titulo do Grupo de Campos</legend>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="userName" placeholder="Digite seu Nome" />
+
+            <br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="mail" placeholder="Coloque seu Email" />
+
+            <br />
+
+            <label for="corfirmaEmail">  <!--Legenda vinculada a um campo-->
+              Corfirme seu Email:
+            </label>
+            <input type="email" id="corfirmaEmail" placeholder="Confirme aqui..." />
+
+            <br />
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senhaEmail" placeholder="Coloque sua Senha"/>
+
+            <br>
+
+            <label for="confirmaSenha">Confirmar a Senha:</label>
+            <input type="password" id="confirmarSenha" placeholder="Confirme aqui...">
+
+            <br /><br />
+            <hr />
+
+            <label>Escolha uma opção</label> <br />
+            <input type="radio" name="opção" value="1" /> Opção radio (escolha unica) <br />
+            <input type="checkbox" name="check" value="2" /> checkbox (multipla escolha)
+
+            <br /><br />
+            <hr />
+
+            <label>Comentarios:</label> <br />
+            <textarea
+              rows="5"
+              cols="110" placeholder="Essa é a área de texto para comentarios"></textarea>
+          </fieldset>
+
+          <br />
+
+          <button type="button" onclick="enviar()">Me aperte</button>
+        </form>
+
+        <p id="mensagemAgradecimento"></p>
+      </section>
+
+      <div class="container">
+        <h1>Dark Mode</h1>
+        <p>Altere o tema da página.</p>
+        <button id="theme-toggle">Alterar tema</button>
+      </div>
+    </main>
+
+    <br/><br/>
+
+    <footer>
+      <h2>
+        &copy; 2026 - Todos os direitos reservados. O simbolo é feito com a
+        entidade &amp;copy;.
+      </h2>
+      <p>Visite meu <a href="https://github.com/Fugii2910">GitHub</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,11 +15,11 @@
     <title>Teoria base front-end</title>
   </head>
   <body>
-    <header> <!--Cabeçalho-->
+    <header> ---------------Cabeçalho--------------
       
       <h1>Comando básico html</h1>
 
-      <nav>  <!--Agrupa link-->
+      <nav>  -------Agrupa link-----
         <ul>
           <li><a href="#main">Interação com Usuario</a></li>
           <li><a href="#table">Dados Estruturados</a></li>
@@ -29,11 +29,11 @@
 
     </header> 
 
-    <main id="main">  <!--Conteudo Principal da página-->
+    <main id="main">  ------------Conteudo Principal da página-------------
 
       <h2>Formação de texto</h2>
 
-      <section>   <!--tag para dividir o conteudos em seções tematicas-->
+      <section>   ------------------tag para dividir o conteudos em seções tematicas-----------------
         <h2>
           <p>
             posso utilizar a tag <em>em</em> para dar ênfaze em itático <br />
@@ -47,27 +47,28 @@
       <section>
         <h2>Sobre Listas</h2>
 
-        <ol>  <!--Lista ordenada numerada-->
+        <ol>  -----------Lista ordenada numerada-------------
           <li>primeiro item</li>
           <li>segundo item</li>
         </ol>
 
-        <ul>  <!--lista nao ordenada-->
+        <ul>  ----------------lista nao ordenada-----------
           <li>item</li>
           <li>item tbm</li>
         </ul>
 
-        <details>  <!--Ocultar conteudo que esta dentro dele-->
+        <details>  --------------------Ocultar conteudo que esta dentro dele-----------------
           <summary>Clique aqui para ver os conteudos</summary>
 
           <h3>Para de ser curioso.</h3>
         </details>
+
       </section>
 
       <section>
         <h2>Midia e Imagens</h2>
 
-        <figure id="figure"> <!--Agrupar a imagem junto com a legenda-->
+        <figure id="figure"> -------------------Agrupar a imagem junto com a legenda--------------
             <img src="IMG/one piece.webp" alt="Bando one piece">
             <figcaption>
                 É aonde colocamos a legenda da imagem
@@ -78,9 +79,9 @@
       <section>
         <h2>Tabelas de Informações</h2>
 
-        <table border="3" id="table"> <!--Cria uma tabela e o atributo border define a expessura da borda-->
+        <table border="3" id="table"> ------------Cria uma tabela e o atributo border define a expessura da borda------------------
 
-            <thead> <!--Cabeçalho da tabela-->
+            <thead> -------------------Cabeçalho da tabela-----------------------
                 <tr>
                     <td>A</td>
                     <td>B</td>
@@ -148,6 +149,12 @@
             <p id="mensagemAgradecimento"></p>
 
       </section>
+
+       <div class="container">
+          <h1>Dark Mode</h1>
+          <p>Altere o tema da página.</p>
+          <button id="theme-toggle">Alterar tema</button>
+        </div>
 
     </main>
     
